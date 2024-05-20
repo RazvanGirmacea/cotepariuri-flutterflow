@@ -1,17 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -51,7 +45,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                       ),
                     ),
             )
-          : StartPageWidget(),
+          : const StartPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -71,12 +65,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                           ),
                         ),
                 )
-              : StartPageWidget(),
+              : const StartPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
           path: '/homePage',
-          builder: (context, params) => HomePageWidget(),
+          builder: (context, params) => const HomePageWidget(),
         ),
         FFRoute(
           name: 'MatchPage',
@@ -99,7 +93,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'StartPage',
           path: '/startPage',
-          builder: (context, params) => StartPageWidget(),
+          builder: (context, params) => const StartPageWidget(),
         ),
         FFRoute(
           name: 'LeaguePage',
@@ -114,12 +108,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'SettingPage',
           path: '/settingPage',
-          builder: (context, params) => SettingPageWidget(),
+          builder: (context, params) => const SettingPageWidget(),
         ),
         FFRoute(
           name: 'SitePage',
           path: '/sitePage',
-          builder: (context, params) => SitePageWidget(),
+          builder: (context, params) => const SitePageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
@@ -284,7 +278,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

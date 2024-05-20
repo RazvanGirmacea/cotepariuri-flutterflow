@@ -3,13 +3,8 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'setting_page_model.dart';
 export 'setting_page_model.dart';
 
@@ -41,8 +36,8 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 1000.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 1000.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -53,8 +48,8 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -81,11 +76,11 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
               : FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Color(0xFF1D242F),
+            backgroundColor: const Color(0xFF1D242F),
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(65.0),
+              preferredSize: const Size.fromHeight(65.0),
               child: AppBar(
-                backgroundColor: Color(0xFF1D242F),
+                backgroundColor: const Color(0xFF1D242F),
                 automaticallyImplyLeading: false,
                 title: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -93,7 +88,7 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
                   children: [
                     Expanded(
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -113,7 +108,7 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
                     ),
                   ],
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: false,
                 toolbarHeight: 63.0,
                 elevation: 2.0,
@@ -124,29 +119,29 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
               child: Container(
                 width: double.infinity,
                 height: double.infinity,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF1D242F),
                 ),
                 child: Stack(
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsets.all(5.0),
+                              padding: const EdgeInsets.all(5.0),
                               child: Container(
                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                 height: MediaQuery.sizeOf(context).height * 1.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFEBEBEB),
+                                  color: const Color(0xFFEBEBEB),
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(20.0),
+                                  padding: const EdgeInsets.all(20.0),
                                   child: SingleChildScrollView(
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -179,11 +174,11 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
                                             FlutterFlowLanguageSelector(
                                               width: 200.0,
                                               backgroundColor:
-                                                  Color(0xFF232948),
+                                                  const Color(0xFF232948),
                                               borderColor: Colors.transparent,
                                               dropdownIconColor: Colors.white,
                                               borderRadius: 8.0,
-                                              textStyle: TextStyle(
+                                              textStyle: const TextStyle(
                                                 fontFamily: 'Gelion',
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.w600,
@@ -204,8 +199,8 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
                                         ).animateOnPageLoad(animationsMap[
                                             'rowOnPageLoadAnimation']!),
                                       ]
-                                          .divide(SizedBox(height: 30.0))
-                                          .addToStart(SizedBox(height: 10.0)),
+                                          .divide(const SizedBox(height: 30.0))
+                                          .addToStart(const SizedBox(height: 10.0)),
                                     ),
                                   ),
                                 ),
@@ -217,11 +212,11 @@ class _SettingPageWidgetState extends State<SettingPageWidget>
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 1.0),
+                      alignment: const AlignmentDirectional(0.0, 1.0),
                       child: wrapWithModel(
                         model: _model.navbarModel,
                         updateCallback: () => setState(() {}),
-                        child: NavbarWidget(
+                        child: const NavbarWidget(
                           selected: 3,
                         ),
                       ),

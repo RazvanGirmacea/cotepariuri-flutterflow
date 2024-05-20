@@ -4,20 +4,9 @@ import '/components/footer_widget.dart';
 import '/components/loading_widget.dart';
 import '/components/navbar_widget.dart';
 import '/components/neterror_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import '/flutter_flow/custom_functions.dart' as functions;
 import 'league_page_widget.dart' show LeaguePageWidget;
-import 'package:styled_divider/styled_divider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class LeaguePageModel extends FlutterFlowModel<LeaguePageWidget> {
   ///  Local state fields for this page.
@@ -79,9 +68,9 @@ class LeaguePageModel extends FlutterFlowModel<LeaguePageWidget> {
       language: FFLocalizations.of(context).languageCode,
       league: widget.leagueName,
     );
-    if ((leagueAPI?.succeeded ?? true)) {
+    if ((leagueAPI.succeeded ?? true)) {
       loading = false;
-      FFAppState().leagueData = (leagueAPI?.jsonBody ?? '');
+      FFAppState().leagueData = (leagueAPI.jsonBody ?? '');
     } else {
       netstatus = false;
     }

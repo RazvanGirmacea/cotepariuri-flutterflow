@@ -6,8 +6,6 @@ import '/components/neterror_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:styled_divider/styled_divider.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -15,7 +13,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
@@ -67,8 +64,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 1000.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 1000.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -79,8 +76,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -91,8 +88,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -103,8 +100,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -115,8 +112,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 500.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -127,8 +124,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 700.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -139,8 +136,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 900.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -151,8 +148,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 1100.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -163,8 +160,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 1300.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -175,8 +172,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 1500.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -187,8 +184,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 1700.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -199,8 +196,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 1900.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -211,8 +208,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 2100.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -223,8 +220,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 2300.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -235,8 +232,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
             curve: Curves.easeInOut,
             delay: 2500.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -271,39 +268,39 @@ class _HomePageWidgetState extends State<HomePageWidget>
               : FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Color(0xFF1D242F),
+            backgroundColor: const Color(0xFF1D242F),
             floatingActionButton: Opacity(
               opacity: 0.4,
               child: FloatingActionButton(
                 onPressed: () async {
                   await _model.matchListView?.animateTo(
                     0,
-                    duration: Duration(milliseconds: 300),
+                    duration: const Duration(milliseconds: 300),
                     curve: Curves.ease,
                   );
                 },
-                backgroundColor: Color(0xFFE0E3E7),
+                backgroundColor: const Color(0xFFE0E3E7),
                 elevation: 8.0,
-                child: Icon(
+                child: const Icon(
                   Icons.keyboard_double_arrow_up,
                   color: Colors.black,
                   size: 36.0,
                 ),
               ),
             ),
-            drawer: Container(
+            drawer: SizedBox(
               width: MediaQuery.sizeOf(context).width * 0.85,
               child: Drawer(
                 elevation: 16.0,
                 child: Container(
                   width: 100.0,
                   height: 100.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0xFFE0E3E7),
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 20.0),
+                        const EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 10.0, 20.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -322,7 +319,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation']!),
-                        Divider(
+                        const Divider(
                           thickness: 1.0,
                           color: Color(0xB2262D34),
                         ).animateOnPageLoad(
@@ -336,7 +333,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               children: [
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -349,7 +346,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -409,7 +406,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -417,7 +414,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation2']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -430,7 +427,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -491,7 +488,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -499,7 +496,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation3']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -512,7 +509,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -573,7 +570,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -581,7 +578,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation4']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -594,7 +591,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -655,7 +652,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -663,7 +660,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation5']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -676,7 +673,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -737,7 +734,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -745,7 +742,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation6']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -758,7 +755,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -819,7 +816,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -827,7 +824,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation7']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -840,7 +837,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -901,7 +898,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -909,7 +906,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation8']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -922,7 +919,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -983,7 +980,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -991,7 +988,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation9']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -1004,7 +1001,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -1065,7 +1062,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -1073,7 +1070,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation10']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -1086,7 +1083,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -1147,7 +1144,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -1155,7 +1152,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     'containerOnPageLoadAnimation11']!),
                                 Container(
                                   width: MediaQuery.sizeOf(context).width * 1.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFE0E3E7),
                                     boxShadow: [
                                       BoxShadow(
@@ -1168,7 +1165,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(10.0),
+                                    padding: const EdgeInsets.all(10.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
                                       focusColor: Colors.transparent,
@@ -1229,7 +1226,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 10.0)),
+                                        ].divide(const SizedBox(width: 10.0)),
                                       ),
                                     ),
                                   ),
@@ -1239,7 +1236,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   Container(
                                     width:
                                         MediaQuery.sizeOf(context).width * 1.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFE0E3E7),
                                       boxShadow: [
                                         BoxShadow(
@@ -1252,7 +1249,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       ],
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsets.all(10.0),
+                                      padding: const EdgeInsets.all(10.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
                                         focusColor: Colors.transparent,
@@ -1313,26 +1310,26 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 10.0)),
+                                          ].divide(const SizedBox(width: 10.0)),
                                         ),
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
                                       'containerOnPageLoadAnimation13']!),
-                              ].divide(SizedBox(height: 1.0)),
+                              ].divide(const SizedBox(height: 1.0)),
                             ),
                           ),
                         ),
-                      ].divide(SizedBox(height: 10.0)),
+                      ].divide(const SizedBox(height: 10.0)),
                     ),
                   ),
                 ),
               ),
             ),
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(65.0),
+              preferredSize: const Size.fromHeight(65.0),
               child: AppBar(
-                backgroundColor: Color(0xFF1D242F),
+                backgroundColor: const Color(0xFF1D242F),
                 automaticallyImplyLeading: false,
                 title: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -1346,7 +1343,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       onTap: () async {
                         scaffoldKey.currentState!.openDrawer();
                       },
-                      child: Icon(
+                      child: const Icon(
                         Icons.output,
                         color: Colors.white,
                         size: 30.0,
@@ -1354,7 +1351,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     ),
                     Expanded(
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Image.asset(
                           'assets/images/cropped-logo-darkx300-compressor.png',
                           width: 280.0,
@@ -1366,7 +1363,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     Container(
                       width: 30.0,
                       height: 30.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -1393,13 +1390,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               setState(() {});
                               await _model.matchListView?.animateTo(
                                 0,
-                                duration: Duration(milliseconds: 300),
+                                duration: const Duration(milliseconds: 300),
                                 curve: Curves.ease,
                               );
                             }),
                           ]);
                         },
-                        child: Icon(
+                        child: const Icon(
                           FFIcons.kspin3,
                           color: Colors.white,
                           size: 25.0,
@@ -1408,9 +1405,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         animationsMap['iconOnActionTriggerAnimation']!,
                       ),
                     ),
-                  ].divide(SizedBox(width: 10.0)),
+                  ].divide(const SizedBox(width: 10.0)),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: false,
                 toolbarHeight: 63.0,
                 elevation: 2.0,
@@ -1419,32 +1416,32 @@ class _HomePageWidgetState extends State<HomePageWidget>
             body: Container(
               width: double.infinity,
               height: double.infinity,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xFF1D242F),
               ),
               child: Stack(
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Expanded(
                           child: Padding(
-                            padding: EdgeInsets.all(5.0),
+                            padding: const EdgeInsets.all(5.0),
                             child: Container(
                               width: MediaQuery.sizeOf(context).width * 1.0,
                               height: MediaQuery.sizeOf(context).height * 1.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFFEBEBEB),
+                                color: const Color(0xFFEBEBEB),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               child: Stack(
                                 children: [
                                   if (!_model.loading && _model.netstatus)
                                     Padding(
-                                      padding: EdgeInsets.all(20.0),
+                                      padding: const EdgeInsets.all(20.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -1481,7 +1478,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 5.0, 0.0, 5.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -1541,8 +1538,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       .height *
                                                   0.7,
                                               decoration: BoxDecoration(
-                                                color: Color(0xFFEBEBEB),
-                                                boxShadow: [
+                                                color: const Color(0xFFEBEBEB),
+                                                boxShadow: const [
                                                   BoxShadow(
                                                     blurRadius: 4.0,
                                                     color: Color(0x33000000),
@@ -1555,7 +1552,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(10.0),
                                                 border: Border.all(
-                                                  color: Color(0x17626262),
+                                                  color: const Color(0x17626262),
                                                   width: 2.0,
                                                 ),
                                               ),
@@ -1587,10 +1584,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             height: 80.0,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0xFFD8DDEA),
                                                               borderRadius:
-                                                                  BorderRadius
+                                                                  const BorderRadius
                                                                       .only(
                                                                 bottomLeft: Radius
                                                                     .circular(
@@ -1607,7 +1604,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               ),
                                                               border:
                                                                   Border.all(
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFFD8DDEA),
                                                               ),
                                                             ),
@@ -1640,7 +1637,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                   extra: <String,
                                                                       dynamic>{
                                                                     kTransitionInfoKey:
-                                                                        TransitionInfo(
+                                                                        const TransitionInfo(
                                                                       hasTransition:
                                                                           true,
                                                                       transitionType:
@@ -1665,10 +1662,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                     child:
                                                                         Container(
                                                                       decoration:
-                                                                          BoxDecoration(),
+                                                                          const BoxDecoration(),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             10.0,
                                                                             5.0,
                                                                             10.0,
@@ -1683,7 +1680,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               r'''$.logo''',
                                                                             ).toString().isNotEmpty)
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 5.0, 0.0),
                                                                                 child: Image.network(
                                                                                   getJsonField(
                                                                                     iDItem,
@@ -1696,7 +1693,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                               ),
                                                                             Expanded(
                                                                               child: Container(
-                                                                                decoration: BoxDecoration(),
+                                                                                decoration: const BoxDecoration(),
                                                                                 child: Text(
                                                                                   functions.toUpper(getJsonField(
                                                                                     iDItem,
@@ -1704,7 +1701,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                   ).toString()),
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: 'Gelion',
-                                                                                        color: Color(0xFFCD1C21),
+                                                                                        color: const Color(0xFFCD1C21),
                                                                                         fontSize: 16.0,
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.bold,
@@ -1724,7 +1721,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       ) !=
                                                                       null)
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           10.0,
                                                                           10.0,
@@ -1745,12 +1742,12 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                             60.0,
                                                                         fit: BoxFit
                                                                             .scaleDown,
-                                                                        alignment: Alignment(
+                                                                        alignment: const Alignment(
                                                                             1.0,
                                                                             0.0),
                                                                       ),
                                                                     ),
-                                                                ].divide(SizedBox(
+                                                                ].divide(const SizedBox(
                                                                     width:
                                                                         5.0)),
                                                               ),
@@ -1812,7 +1809,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                   Container(
                                                                                     width: MediaQuery.sizeOf(context).width * 1.0,
                                                                                     height: 30.0,
-                                                                                    decoration: BoxDecoration(
+                                                                                    decoration: const BoxDecoration(
                                                                                       color: Color(0xFF232948),
                                                                                     ),
                                                                                     child: Row(
@@ -1834,15 +1831,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                         r'''$.is_live''',
                                                                                                       ) ==
                                                                                                       1) {
-                                                                                                return Color(0xFF39B931);
+                                                                                                return const Color(0xFF39B931);
                                                                                               } else if (getJsonField(
                                                                                                     eventItem,
                                                                                                     r'''$.displayStatus''',
                                                                                                   ) ==
                                                                                                   4) {
-                                                                                                return Color(0xFF0378ED);
+                                                                                                return const Color(0xFF0378ED);
                                                                                               } else {
-                                                                                                return Color(0xFF616161);
+                                                                                                return const Color(0xFF616161);
                                                                                               }
                                                                                             }(),
                                                                                             border: Border.all(
@@ -1857,21 +1854,21 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                           r'''$.is_live''',
                                                                                                         ) ==
                                                                                                         1) {
-                                                                                                  return Color(0xFF39B931);
+                                                                                                  return const Color(0xFF39B931);
                                                                                                 } else if (getJsonField(
                                                                                                       eventItem,
                                                                                                       r'''$.displayStatus''',
                                                                                                     ) ==
                                                                                                     4) {
-                                                                                                  return Color(0xFF0378ED);
+                                                                                                  return const Color(0xFF0378ED);
                                                                                                 } else {
-                                                                                                  return Color(0xFF616161);
+                                                                                                  return const Color(0xFF616161);
                                                                                                 }
                                                                                               }(),
                                                                                             ),
                                                                                           ),
                                                                                           child: Align(
-                                                                                            alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                            alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                             child: Text(
                                                                                               FFLocalizations.of(context).languageCode == 'ro'
                                                                                                   ? () {
@@ -1927,7 +1924,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 18.0, 3.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 18.0, 3.0),
                                                                                           child: Text(
                                                                                             functions.convertDateFormat(getJsonField(
                                                                                               matchItem,
@@ -1935,7 +1932,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                             ).toString()),
                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                   fontFamily: 'Gelion',
-                                                                                                  color: Color(0xFFD8DDEA),
+                                                                                                  color: const Color(0xFFD8DDEA),
                                                                                                   fontSize: 16.0,
                                                                                                   letterSpacing: 0.0,
                                                                                                   fontWeight: FontWeight.bold,
@@ -1944,7 +1941,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 10.0, 0.0),
                                                                                           child: Text(
                                                                                             functions.unixToTime(getJsonField(
                                                                                               eventItem,
@@ -1963,9 +1960,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                   Container(
                                                                                     width: MediaQuery.sizeOf(context).width * 1.0,
                                                                                     decoration: BoxDecoration(
-                                                                                      color: eventIndex % 2 == 1 ? Color(0xFFEBEBEB) : Colors.white,
+                                                                                      color: eventIndex % 2 == 1 ? const Color(0xFFEBEBEB) : Colors.white,
                                                                                       border: Border.all(
-                                                                                        color: Color(0xFFEBEBEB),
+                                                                                        color: const Color(0xFFEBEBEB),
                                                                                       ),
                                                                                     ),
                                                                                     child: Column(
@@ -1974,9 +1971,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                         Container(
                                                                                           width: MediaQuery.sizeOf(context).width * 1.0,
                                                                                           height: 75.0,
-                                                                                          decoration: BoxDecoration(),
+                                                                                          decoration: const BoxDecoration(),
                                                                                           child: Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                                                                                             child: InkWell(
                                                                                               splashColor: Colors.transparent,
                                                                                               focusColor: Colors.transparent,
@@ -2009,7 +2006,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     ),
                                                                                                   }.withoutNulls,
                                                                                                   extra: <String, dynamic>{
-                                                                                                    kTransitionInfoKey: TransitionInfo(
+                                                                                                    kTransitionInfoKey: const TransitionInfo(
                                                                                                       hasTransition: true,
                                                                                                       transitionType: PageTransitionType.leftToRight,
                                                                                                     ),
@@ -2021,11 +2018,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                                                                 children: [
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                                                                                                     child: Container(
                                                                                                       width: (MediaQuery.sizeOf(context).width - 100) / 2,
                                                                                                       height: 75.0,
-                                                                                                      decoration: BoxDecoration(),
+                                                                                                      decoration: const BoxDecoration(),
                                                                                                       child: Column(
                                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                                         mainAxisAlignment: MainAxisAlignment.start,
@@ -2067,15 +2064,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                 ) ??
                                                                                                                                 0) >
                                                                                                                             0
-                                                                                                                        ? Color(0xFFF9CF58)
+                                                                                                                        ? const Color(0xFFF9CF58)
                                                                                                                         : Colors.white,
                                                                                                                     borderRadius: BorderRadius.circular(5.0),
                                                                                                                     border: Border.all(
-                                                                                                                      color: Color(0xFFCCCCCC),
+                                                                                                                      color: const Color(0xFFCCCCCC),
                                                                                                                     ),
                                                                                                                   ),
                                                                                                                   child: Align(
-                                                                                                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                     child: Text(
                                                                                                                       valueOrDefault<String>(
                                                                                                                         getJsonField(
@@ -2086,7 +2083,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                             fontFamily: 'Gelion',
-                                                                                                                            color: Color(0xFFCD1C21),
+                                                                                                                            color: const Color(0xFFCD1C21),
                                                                                                                             fontSize: 16.0,
                                                                                                                             letterSpacing: 0.0,
                                                                                                                             fontWeight: FontWeight.w500,
@@ -2095,7 +2092,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                     ),
                                                                                                                   ),
                                                                                                                 ),
-                                                                                                            ].divide(SizedBox(width: 5.0)),
+                                                                                                            ].divide(const SizedBox(width: 5.0)),
                                                                                                           ),
                                                                                                           Text(
                                                                                                             getJsonField(
@@ -2105,7 +2102,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             textAlign: TextAlign.start,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: 'Gelion',
-                                                                                                                  color: Color(0xFFCD1C21),
+                                                                                                                  color: const Color(0xFFCD1C21),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   fontWeight: FontWeight.bold,
@@ -2117,11 +2114,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                     ),
                                                                                                   ),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
                                                                                                     child: Container(
                                                                                                       width: (MediaQuery.sizeOf(context).width - 100) / 2,
                                                                                                       height: 75.0,
-                                                                                                      decoration: BoxDecoration(),
+                                                                                                      decoration: const BoxDecoration(),
                                                                                                       child: Column(
                                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                                         mainAxisAlignment: MainAxisAlignment.start,
@@ -2151,15 +2148,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                 ) ??
                                                                                                                                 0) >
                                                                                                                             0
-                                                                                                                        ? Color(0xFFF9CF58)
+                                                                                                                        ? const Color(0xFFF9CF58)
                                                                                                                         : Colors.white,
                                                                                                                     borderRadius: BorderRadius.circular(5.0),
                                                                                                                     border: Border.all(
-                                                                                                                      color: Color(0xFFCCCCCC),
+                                                                                                                      color: const Color(0xFFCCCCCC),
                                                                                                                     ),
                                                                                                                   ),
                                                                                                                   child: Align(
-                                                                                                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                     child: Text(
                                                                                                                       valueOrDefault<String>(
                                                                                                                         getJsonField(
@@ -2170,7 +2167,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                             fontFamily: 'Gelion',
-                                                                                                                            color: Color(0xFFCD1C21),
+                                                                                                                            color: const Color(0xFFCD1C21),
                                                                                                                             fontSize: 16.0,
                                                                                                                             letterSpacing: 0.0,
                                                                                                                             fontWeight: FontWeight.w500,
@@ -2191,7 +2188,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                   fit: BoxFit.contain,
                                                                                                                 ),
                                                                                                               ),
-                                                                                                            ].divide(SizedBox(width: 5.0)),
+                                                                                                            ].divide(const SizedBox(width: 5.0)),
                                                                                                           ),
                                                                                                           Text(
                                                                                                             getJsonField(
@@ -2201,7 +2198,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                             textAlign: TextAlign.end,
                                                                                                             style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                   fontFamily: 'Gelion',
-                                                                                                                  color: Color(0xFFCD1C21),
+                                                                                                                  color: const Color(0xFFCD1C21),
                                                                                                                   fontSize: 15.0,
                                                                                                                   letterSpacing: 0.0,
                                                                                                                   fontWeight: FontWeight.bold,
@@ -2224,9 +2221,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               Container(
                                                                                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                                                                                 height: 50.0,
-                                                                                                decoration: BoxDecoration(),
+                                                                                                decoration: const BoxDecoration(),
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
                                                                                                   child: Row(
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2272,11 +2269,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[0].o1.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2286,18 +2283,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                                                     bottomRight: Radius.circular(0.0),
                                                                                                                     topLeft: Radius.circular(5.0),
                                                                                                                     topRight: Radius.circular(0.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(valueOrDefault<String>(
@@ -2317,9 +2314,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[0].o1.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2337,11 +2334,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[0].oX.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2352,11 +2349,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                     )
                                                                                                                   ],
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(valueOrDefault<String>(
@@ -2376,9 +2373,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[0].oX.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2396,11 +2393,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[0].o2.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2410,18 +2407,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                                                     bottomRight: Radius.circular(5.0),
                                                                                                                     topLeft: Radius.circular(0.0),
                                                                                                                     topRight: Radius.circular(5.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(valueOrDefault<String>(
@@ -2441,9 +2438,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[0].o2.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2451,7 +2448,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                   ),
                                                                                                                 ),
                                                                                                               ),
-                                                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                                                           ),
                                                                                                         ),
                                                                                                     ],
@@ -2461,9 +2458,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               Container(
                                                                                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                                                                                 height: 50.0,
-                                                                                                decoration: BoxDecoration(),
+                                                                                                decoration: const BoxDecoration(),
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
                                                                                                   child: Row(
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2509,11 +2506,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[1].o1.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2523,18 +2520,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                                                     bottomRight: Radius.circular(0.0),
                                                                                                                     topLeft: Radius.circular(5.0),
                                                                                                                     topRight: Radius.circular(0.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -2551,9 +2548,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[1].o1.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2571,11 +2568,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[1].oX.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2586,11 +2583,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                     )
                                                                                                                   ],
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -2607,9 +2604,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[1].oX.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2627,11 +2624,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[1].o2.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2641,18 +2638,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                                                     bottomRight: Radius.circular(5.0),
                                                                                                                     topLeft: Radius.circular(0.0),
                                                                                                                     topRight: Radius.circular(5.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -2669,9 +2666,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[1].o2.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2679,7 +2676,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                   ),
                                                                                                                 ),
                                                                                                               ),
-                                                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                                                           ),
                                                                                                         ),
                                                                                                     ],
@@ -2689,9 +2686,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               Container(
                                                                                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                                                                                 height: 50.0,
-                                                                                                decoration: BoxDecoration(),
+                                                                                                decoration: const BoxDecoration(),
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
                                                                                                   child: Row(
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2737,11 +2734,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[2].o1.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2751,18 +2748,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                                                     bottomRight: Radius.circular(0.0),
                                                                                                                     topLeft: Radius.circular(5.0),
                                                                                                                     topRight: Radius.circular(0.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -2779,9 +2776,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[2].o1.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2799,11 +2796,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[2].oX.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2814,11 +2811,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                     )
                                                                                                                   ],
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -2835,9 +2832,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[2].oX.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2855,11 +2852,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[2].o2.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2869,18 +2866,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                                                     bottomRight: Radius.circular(5.0),
                                                                                                                     topLeft: Radius.circular(0.0),
                                                                                                                     topRight: Radius.circular(5.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -2897,9 +2894,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[2].o2.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -2907,7 +2904,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                   ),
                                                                                                                 ),
                                                                                                               ),
-                                                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                                                           ),
                                                                                                         ),
                                                                                                     ],
@@ -2917,9 +2914,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               Container(
                                                                                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                                                                                 height: 50.0,
-                                                                                                decoration: BoxDecoration(),
+                                                                                                decoration: const BoxDecoration(),
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
                                                                                                   child: Row(
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2965,11 +2962,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[3].o1.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -2979,18 +2976,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                                                     bottomRight: Radius.circular(0.0),
                                                                                                                     topLeft: Radius.circular(5.0),
                                                                                                                     topRight: Radius.circular(0.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -3007,9 +3004,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[3].o1.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -3027,11 +3024,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[3].oX.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -3042,11 +3039,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                     )
                                                                                                                   ],
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -3063,9 +3060,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[3].oX.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -3083,11 +3080,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[3].o2.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -3097,18 +3094,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                                                     bottomRight: Radius.circular(5.0),
                                                                                                                     topLeft: Radius.circular(0.0),
                                                                                                                     topRight: Radius.circular(5.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -3125,9 +3122,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[3].o2.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -3135,7 +3132,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                   ),
                                                                                                                 ),
                                                                                                               ),
-                                                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                                                           ),
                                                                                                         ),
                                                                                                     ],
@@ -3145,7 +3142,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                               Container(
                                                                                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                                                                                 height: 50.0,
-                                                                                                decoration: BoxDecoration(
+                                                                                                decoration: const BoxDecoration(
                                                                                                   borderRadius: BorderRadius.only(
                                                                                                     bottomLeft: Radius.circular(10.0),
                                                                                                     bottomRight: Radius.circular(10.0),
@@ -3154,7 +3151,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                   ),
                                                                                                 ),
                                                                                                 child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
+                                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 10.0, 10.0, 10.0),
                                                                                                   child: Row(
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -3200,11 +3197,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[4].o1.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -3214,18 +3211,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                                                     bottomRight: Radius.circular(0.0),
                                                                                                                     topLeft: Radius.circular(5.0),
                                                                                                                     topRight: Radius.circular(0.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -3242,9 +3239,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[4].o1.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -3262,11 +3259,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[4].oX.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -3277,11 +3274,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                     )
                                                                                                                   ],
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -3298,9 +3295,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[4].oX.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -3318,11 +3315,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                               r'''$.odds[4].o2.isMax''',
                                                                                                                             ) ==
                                                                                                                             true
-                                                                                                                        ? Color(0xFF232948)
-                                                                                                                        : Color(0xFFD8D8D8),
-                                                                                                                    Color(0xFFD8D8D8),
+                                                                                                                        ? const Color(0xFF232948)
+                                                                                                                        : const Color(0xFFD8D8D8),
+                                                                                                                    const Color(0xFFD8D8D8),
                                                                                                                   ),
-                                                                                                                  boxShadow: [
+                                                                                                                  boxShadow: const [
                                                                                                                     BoxShadow(
                                                                                                                       blurRadius: 4.0,
                                                                                                                       color: Color(0x33000000),
@@ -3332,18 +3329,18 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                       ),
                                                                                                                     )
                                                                                                                   ],
-                                                                                                                  borderRadius: BorderRadius.only(
+                                                                                                                  borderRadius: const BorderRadius.only(
                                                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                                                     bottomRight: Radius.circular(5.0),
                                                                                                                     topLeft: Radius.circular(0.0),
                                                                                                                     topRight: Radius.circular(5.0),
                                                                                                                   ),
                                                                                                                   border: Border.all(
-                                                                                                                    color: Color(0xFFB8BFD4),
+                                                                                                                    color: const Color(0xFFB8BFD4),
                                                                                                                   ),
                                                                                                                 ),
                                                                                                                 child: Align(
-                                                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                                                   child: Text(
                                                                                                                     valueOrDefault<String>(
                                                                                                                       functions.hideNullValue(getJsonField(
@@ -3360,9 +3357,9 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                                       r'''$.odds[4].o2.isMax''',
                                                                                                                                     ) ==
                                                                                                                                     true
-                                                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                                                : Color(0xFF1D242F),
-                                                                                                                            Color(0xFF1D242F),
+                                                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                                                : const Color(0xFF1D242F),
+                                                                                                                            const Color(0xFF1D242F),
                                                                                                                           ),
                                                                                                                           letterSpacing: 0.0,
                                                                                                                           useGoogleFonts: false,
@@ -3370,7 +3367,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                                                                   ),
                                                                                                                 ),
                                                                                                               ),
-                                                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                                                           ),
                                                                                                         ),
                                                                                                     ],
@@ -3410,33 +3407,33 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 1.0),
+                                                const AlignmentDirectional(0.0, 1.0),
                                             child: wrapWithModel(
                                               model: _model.footerModel,
                                               updateCallback: () =>
                                                   setState(() {}),
-                                              child: FooterWidget(),
+                                              child: const FooterWidget(),
                                             ),
                                           ),
-                                        ].divide(SizedBox(height: 0.0)),
+                                        ].divide(const SizedBox(height: 0.0)),
                                       ),
                                     ),
                                   if (_model.loading && _model.netstatus)
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.loadingModel,
                                         updateCallback: () => setState(() {}),
-                                        child: LoadingWidget(),
+                                        child: const LoadingWidget(),
                                       ),
                                     ),
                                   if (!_model.netstatus)
                                     Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: wrapWithModel(
                                         model: _model.neterrorModel,
                                         updateCallback: () => setState(() {}),
-                                        child: NeterrorWidget(),
+                                        child: const NeterrorWidget(),
                                       ),
                                     ),
                                 ],
@@ -3449,11 +3446,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: wrapWithModel(
                       model: _model.navbarModel,
                       updateCallback: () => setState(() {}),
-                      child: NavbarWidget(
+                      child: const NavbarWidget(
                         selected: 1,
                       ),
                     ),

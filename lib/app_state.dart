@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'backend/api_requests/api_manager.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'flutter_flow/flutter_flow_util.dart';
-import 'dart:convert';
 
 class FFAppState extends ChangeNotifier {
   static FFAppState _instance = FFAppState._internal();
@@ -33,51 +30,51 @@ class FFAppState extends ChangeNotifier {
 
   dynamic _data;
   dynamic get data => _data;
-  set data(dynamic _value) {
-    _data = _value;
+  set data(dynamic value) {
+    _data = value;
   }
 
   dynamic _leagueData;
   dynamic get leagueData => _leagueData;
-  set leagueData(dynamic _value) {
-    _leagueData = _value;
+  set leagueData(dynamic value) {
+    _leagueData = value;
   }
 
   dynamic _matchData;
   dynamic get matchData => _matchData;
-  set matchData(dynamic _value) {
-    _matchData = _value;
+  set matchData(dynamic value) {
+    _matchData = value;
   }
 
   bool _bet = true;
   bool get bet => _bet;
-  set bet(bool _value) {
-    _bet = _value;
+  set bet(bool value) {
+    _bet = value;
   }
 
   bool _home = false;
   bool get home => _home;
-  set home(bool _value) {
-    _home = _value;
+  set home(bool value) {
+    _home = value;
   }
 
   bool _up = false;
   bool get up => _up;
-  set up(bool _value) {
-    _up = _value;
+  set up(bool value) {
+    _up = value;
   }
 
   bool _isLive = true;
   bool get isLive => _isLive;
-  set isLive(bool _value) {
-    _isLive = _value;
+  set isLive(bool value) {
+    _isLive = value;
   }
 
   bool _firstOpen = true;
   bool get firstOpen => _firstOpen;
-  set firstOpen(bool _value) {
-    _firstOpen = _value;
-    prefs.setBool('ff_firstOpen', _value);
+  set firstOpen(bool value) {
+    _firstOpen = value;
+    prefs.setBool('ff_firstOpen', value);
   }
 }
 

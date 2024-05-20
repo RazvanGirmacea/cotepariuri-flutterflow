@@ -1,9 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'start_page_model.dart';
 export 'start_page_model.dart';
@@ -62,13 +60,13 @@ class _StartPageWidgetState extends State<StartPageWidget> {
               : FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Color(0xFF1D242F),
+            backgroundColor: const Color(0xFF1D242F),
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(10.0),
+              preferredSize: const Size.fromHeight(10.0),
               child: AppBar(
-                backgroundColor: Color(0xFF1D242F),
+                backgroundColor: const Color(0xFF1D242F),
                 automaticallyImplyLeading: false,
-                actions: [],
+                actions: const [],
                 centerTitle: false,
                 toolbarHeight: 10.0,
                 elevation: 0.0,
@@ -99,7 +97,7 @@ class _StartPageWidgetState extends State<StartPageWidget> {
                                   fit: BoxFit.contain,
                                 ),
                               ),
-                            ].divide(SizedBox(width: 10.0)),
+                            ].divide(const SizedBox(width: 10.0)),
                           ),
                         ],
                       ),

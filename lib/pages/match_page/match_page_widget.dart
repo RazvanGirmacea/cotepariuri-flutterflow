@@ -8,16 +8,12 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_video_player.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:styled_divider/styled_divider.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'match_page_model.dart';
 export 'match_page_model.dart';
@@ -97,8 +93,8 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 1000.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 1000.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -133,20 +129,20 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
               : FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Color(0xFF1D242F),
+            backgroundColor: const Color(0xFF1D242F),
             floatingActionButton: Opacity(
               opacity: 0.4,
               child: FloatingActionButton(
                 onPressed: () async {
                   await _model.matchsection?.animateTo(
                     0,
-                    duration: Duration(milliseconds: 300),
+                    duration: const Duration(milliseconds: 300),
                     curve: Curves.ease,
                   );
                 },
-                backgroundColor: Color(0xFFE0E3E7),
+                backgroundColor: const Color(0xFFE0E3E7),
                 elevation: 8.0,
-                child: Icon(
+                child: const Icon(
                   Icons.keyboard_double_arrow_up,
                   color: Colors.black,
                   size: 36.0,
@@ -154,9 +150,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
               ),
             ),
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(65.0),
+              preferredSize: const Size.fromHeight(65.0),
               child: AppBar(
-                backgroundColor: Color(0xFF1D242F),
+                backgroundColor: const Color(0xFF1D242F),
                 automaticallyImplyLeading: false,
                 title: Row(
                   mainAxisSize: MainAxisSize.max,
@@ -170,7 +166,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                       onTap: () async {
                         context.safePop();
                       },
-                      child: Icon(
+                      child: const Icon(
                         Icons.arrow_back_ios,
                         color: Colors.white,
                         size: 24.0,
@@ -178,7 +174,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                     ),
                     Expanded(
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -239,7 +235,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
 
                         setState(() {});
                       },
-                      child: Icon(
+                      child: const Icon(
                         FFIcons.kspin3,
                         color: Colors.white,
                         size: 25.0,
@@ -247,9 +243,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                     ).animateOnActionTrigger(
                       animationsMap['iconOnActionTriggerAnimation']!,
                     ),
-                  ].divide(SizedBox(width: 10.0)),
+                  ].divide(const SizedBox(width: 10.0)),
                 ),
-                actions: [],
+                actions: const [],
                 centerTitle: false,
                 toolbarHeight: 63.0,
                 elevation: 2.0,
@@ -260,32 +256,32 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
               child: Container(
                 width: double.infinity,
                 height: double.infinity,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF1D242F),
                 ),
                 child: Stack(
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsets.all(5.0),
+                              padding: const EdgeInsets.all(5.0),
                               child: Container(
                                 width: MediaQuery.sizeOf(context).width * 1.0,
                                 height: MediaQuery.sizeOf(context).height * 1.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFEBEBEB),
+                                  color: const Color(0xFFEBEBEB),
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
                                 child: Stack(
                                   children: [
                                     if (!_model.loading && _model.netStatus)
                                       Padding(
-                                        padding: EdgeInsets.all(20.0),
+                                        padding: const EdgeInsets.all(20.0),
                                         child: SingleChildScrollView(
                                           controller: _model.matchsection,
                                           child: Column(
@@ -299,7 +295,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                   ) !=
                                                   null)
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 20.0),
                                                   child: FlutterFlowVideoPlayer(
@@ -337,7 +333,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                   .matchData,
                                                               r'''$.home_team.name''',
                                                             ).toString(),
-                                                            style: TextStyle(),
+                                                            style: const TextStyle(),
                                                           ),
                                                           TextSpan(
                                                             text: FFLocalizations
@@ -345,7 +341,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 .getText(
                                                               '6ygmaj32' /*  vs  */,
                                                             ),
-                                                            style: TextStyle(
+                                                            style: const TextStyle(
                                                               color: Color(
                                                                   0xFFDD3B3B),
                                                             ),
@@ -356,7 +352,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                   .matchData,
                                                               r'''$.away_team.name''',
                                                             ).toString(),
-                                                            style: TextStyle(),
+                                                            style: const TextStyle(),
                                                           ),
                                                           TextSpan(
                                                             text: FFLocalizations
@@ -364,7 +360,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 .getText(
                                                               'olm3q1m3' /*   Cote Pariuri */,
                                                             ),
-                                                            style: TextStyle(),
+                                                            style: const TextStyle(),
                                                           )
                                                         ],
                                                         style:
@@ -407,8 +403,8 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                         1.0,
                                                 height: 395.0,
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xFFEBEBEB),
-                                                  boxShadow: [
+                                                  color: const Color(0xFFEBEBEB),
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
                                                       color: Color(0x33000000),
@@ -422,7 +418,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                       BorderRadius.circular(
                                                           10.0),
                                                   border: Border.all(
-                                                    color: Color(0x17626262),
+                                                    color: const Color(0x17626262),
                                                     width: 2.0,
                                                   ),
                                                 ),
@@ -438,15 +434,15 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                       height: 30.0,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            Color(0xFFD8DDEA),
+                                                            const Color(0xFFD8DDEA),
                                                         border: Border.all(
                                                           color:
-                                                              Color(0xFFD8DDEA),
+                                                              const Color(0xFFD8DDEA),
                                                         ),
                                                       ),
                                                       child: Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     22.0,
                                                                     3.0,
@@ -465,7 +461,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Gelion',
-                                                                color: Color(
+                                                                color: const Color(
                                                                     0xFF666666),
                                                                 fontSize: 16.0,
                                                                 letterSpacing:
@@ -491,7 +487,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                   1.0,
                                                           height: 30.0,
                                                           decoration:
-                                                              BoxDecoration(
+                                                              const BoxDecoration(
                                                             color: Color(
                                                                 0xFF232948),
                                                           ),
@@ -521,8 +517,8 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                 r'''$.is_live''',
                                                                               ) ==
                                                                               1
-                                                                      ? Color(0xFF39B931)
-                                                                      : Color(0xFF616161),
+                                                                      ? const Color(0xFF39B931)
+                                                                      : const Color(0xFF616161),
                                                                   border: Border
                                                                       .all(
                                                                     color: getJsonField(
@@ -535,13 +531,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   r'''$.is_live''',
                                                                                 ) ==
                                                                                 1
-                                                                        ? Color(0xFF39B931)
-                                                                        : Color(0xFF616161),
+                                                                        ? const Color(0xFF39B931)
+                                                                        : const Color(0xFF616161),
                                                                   ),
                                                                 ),
                                                                 child: Align(
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child: Text(
@@ -587,7 +583,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -630,7 +626,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .of(context)
                                                                 .primaryBtnText,
                                                             border: Border.all(
-                                                              color: Color(
+                                                              color: const Color(
                                                                   0xFFEBEBEB),
                                                             ),
                                                           ),
@@ -646,9 +642,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     1.0,
                                                                 height: 75.0,
                                                                 decoration:
-                                                                    BoxDecoration(),
+                                                                    const BoxDecoration(),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           10.0,
@@ -663,7 +659,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             .spaceBetween,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             10.0,
                                                                             0.0,
                                                                             10.0,
@@ -675,7 +671,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           height:
                                                                               75.0,
                                                                           decoration:
-                                                                              BoxDecoration(),
+                                                                              const BoxDecoration(),
                                                                           child:
                                                                               Column(
                                                                             mainAxisSize:
@@ -719,15 +715,15 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                     ) ??
                                                                                                     0) >
                                                                                                 0
-                                                                                            ? Color(0xFFF9CF58)
+                                                                                            ? const Color(0xFFF9CF58)
                                                                                             : Colors.white,
                                                                                         borderRadius: BorderRadius.circular(5.0),
                                                                                         border: Border.all(
-                                                                                          color: Color(0xFFCCCCCC),
+                                                                                          color: const Color(0xFFCCCCCC),
                                                                                         ),
                                                                                       ),
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                        alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                         child: Text(
                                                                                           getJsonField(
                                                                                             FFAppState().matchData,
@@ -735,7 +731,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                           ).toString(),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Gelion',
-                                                                                                color: Color(0xFFCD1C21),
+                                                                                                color: const Color(0xFFCD1C21),
                                                                                                 fontSize: 16.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w500,
@@ -744,7 +740,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                         ),
                                                                                       ),
                                                                                     ),
-                                                                                ].divide(SizedBox(width: 5.0)),
+                                                                                ].divide(const SizedBox(width: 5.0)),
                                                                               ),
                                                                               Text(
                                                                                 getJsonField(
@@ -754,7 +750,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                 textAlign: TextAlign.start,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Gelion',
-                                                                                      color: Color(0xFFCD1C21),
+                                                                                      color: const Color(0xFFCD1C21),
                                                                                       fontSize: 15.0,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.bold,
@@ -766,7 +762,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                         ),
                                                                       ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             10.0,
                                                                             0.0,
                                                                             10.0,
@@ -778,7 +774,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           height:
                                                                               75.0,
                                                                           decoration:
-                                                                              BoxDecoration(),
+                                                                              const BoxDecoration(),
                                                                           child:
                                                                               Column(
                                                                             mainAxisSize:
@@ -810,15 +806,15 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                     ) ??
                                                                                                     0) >
                                                                                                 0
-                                                                                            ? Color(0xFFF9CF58)
+                                                                                            ? const Color(0xFFF9CF58)
                                                                                             : Colors.white,
                                                                                         borderRadius: BorderRadius.circular(5.0),
                                                                                         border: Border.all(
-                                                                                          color: Color(0xFFCCCCCC),
+                                                                                          color: const Color(0xFFCCCCCC),
                                                                                         ),
                                                                                       ),
                                                                                       child: Align(
-                                                                                        alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                        alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                         child: Text(
                                                                                           getJsonField(
                                                                                             FFAppState().matchData,
@@ -826,7 +822,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                           ).toString(),
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                 fontFamily: 'Gelion',
-                                                                                                color: Color(0xFFCD1C21),
+                                                                                                color: const Color(0xFFCD1C21),
                                                                                                 fontSize: 16.0,
                                                                                                 letterSpacing: 0.0,
                                                                                                 fontWeight: FontWeight.w500,
@@ -847,7 +843,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       fit: BoxFit.contain,
                                                                                     ),
                                                                                   ),
-                                                                                ].divide(SizedBox(width: 5.0)),
+                                                                                ].divide(const SizedBox(width: 5.0)),
                                                                               ),
                                                                               Text(
                                                                                 getJsonField(
@@ -857,7 +853,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                 textAlign: TextAlign.end,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: 'Gelion',
-                                                                                      color: Color(0xFFCD1C21),
+                                                                                      color: const Color(0xFFCD1C21),
                                                                                       fontSize: 15.0,
                                                                                       letterSpacing: 0.0,
                                                                                       fontWeight: FontWeight.bold,
@@ -879,9 +875,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     1.0,
                                                                 height: 50.0,
                                                                 decoration:
-                                                                    BoxDecoration(),
+                                                                    const BoxDecoration(),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           10.0,
@@ -954,11 +950,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[0].o1.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -968,18 +964,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                     bottomRight: Radius.circular(0.0),
                                                                                     topLeft: Radius.circular(5.0),
                                                                                     topRight: Radius.circular(0.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -993,9 +989,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[0].o1.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1013,11 +1009,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[0].oX.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1028,11 +1024,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                     )
                                                                                   ],
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1046,9 +1042,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[0].oX.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1066,11 +1062,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[0].o2.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1080,18 +1076,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                     bottomRight: Radius.circular(5.0),
                                                                                     topLeft: Radius.circular(0.0),
                                                                                     topRight: Radius.circular(5.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1105,9 +1101,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[0].o2.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1115,7 +1111,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                           ),
                                                                         ),
                                                                     ],
@@ -1129,9 +1125,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     1.0,
                                                                 height: 50.0,
                                                                 decoration:
-                                                                    BoxDecoration(),
+                                                                    const BoxDecoration(),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           10.0,
@@ -1204,11 +1200,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[1].o1.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1218,18 +1214,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                     bottomRight: Radius.circular(0.0),
                                                                                     topLeft: Radius.circular(5.0),
                                                                                     topRight: Radius.circular(0.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1243,9 +1239,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[1].o1.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1263,11 +1259,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[1].oX.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1278,11 +1274,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                     )
                                                                                   ],
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1296,9 +1292,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[1].oX.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1316,11 +1312,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[1].o2.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1330,18 +1326,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                     bottomRight: Radius.circular(5.0),
                                                                                     topLeft: Radius.circular(0.0),
                                                                                     topRight: Radius.circular(5.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1355,9 +1351,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[1].o2.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1365,7 +1361,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                           ),
                                                                         ),
                                                                     ],
@@ -1379,9 +1375,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     1.0,
                                                                 height: 50.0,
                                                                 decoration:
-                                                                    BoxDecoration(),
+                                                                    const BoxDecoration(),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           10.0,
@@ -1454,11 +1450,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[2].o1.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1468,18 +1464,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                     bottomRight: Radius.circular(0.0),
                                                                                     topLeft: Radius.circular(5.0),
                                                                                     topRight: Radius.circular(0.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1493,9 +1489,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[2].o1.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1513,11 +1509,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[2].oX.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1528,11 +1524,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                     )
                                                                                   ],
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1546,9 +1542,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[2].oX.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1566,11 +1562,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[2].o2.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1580,18 +1576,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                     bottomRight: Radius.circular(5.0),
                                                                                     topLeft: Radius.circular(0.0),
                                                                                     topRight: Radius.circular(5.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1605,9 +1601,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[2].o2.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1615,7 +1611,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                           ),
                                                                         ),
                                                                     ],
@@ -1629,9 +1625,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     1.0,
                                                                 height: 50.0,
                                                                 decoration:
-                                                                    BoxDecoration(),
+                                                                    const BoxDecoration(),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           10.0,
@@ -1704,11 +1700,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[3].o1.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1718,18 +1714,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                     bottomRight: Radius.circular(0.0),
                                                                                     topLeft: Radius.circular(5.0),
                                                                                     topRight: Radius.circular(0.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1743,9 +1739,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[3].o1.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1763,11 +1759,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[3].oX.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1778,11 +1774,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                     )
                                                                                   ],
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1796,9 +1792,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[3].oX.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1816,11 +1812,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[3].o2.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1830,18 +1826,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                     bottomRight: Radius.circular(5.0),
                                                                                     topLeft: Radius.circular(0.0),
                                                                                     topRight: Radius.circular(5.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -1855,9 +1851,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[3].o2.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -1865,7 +1861,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                           ),
                                                                         ),
                                                                     ],
@@ -1879,7 +1875,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     1.0,
                                                                 height: 50.0,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   borderRadius:
                                                                       BorderRadius
                                                                           .only(
@@ -1898,7 +1894,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                   ),
                                                                 ),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           20.0,
                                                                           10.0,
@@ -1971,11 +1967,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[4].o1.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -1985,18 +1981,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(5.0),
                                                                                     bottomRight: Radius.circular(0.0),
                                                                                     topLeft: Radius.circular(5.0),
                                                                                     topRight: Radius.circular(0.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -2010,9 +2006,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[4].o1.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -2030,11 +2026,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[4].oX.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -2045,11 +2041,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                     )
                                                                                   ],
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -2063,9 +2059,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[4].oX.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -2083,11 +2079,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               r'''$[4].o2.isMax''',
                                                                                             ) ==
                                                                                             true
-                                                                                        ? Color(0xFF232948)
-                                                                                        : Color(0xFFD8D8D8),
-                                                                                    Color(0xFFD8D8D8),
+                                                                                        ? const Color(0xFF232948)
+                                                                                        : const Color(0xFFD8D8D8),
+                                                                                    const Color(0xFFD8D8D8),
                                                                                   ),
-                                                                                  boxShadow: [
+                                                                                  boxShadow: const [
                                                                                     BoxShadow(
                                                                                       blurRadius: 4.0,
                                                                                       color: Color(0x33000000),
@@ -2097,18 +2093,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                       ),
                                                                                     )
                                                                                   ],
-                                                                                  borderRadius: BorderRadius.only(
+                                                                                  borderRadius: const BorderRadius.only(
                                                                                     bottomLeft: Radius.circular(0.0),
                                                                                     bottomRight: Radius.circular(5.0),
                                                                                     topLeft: Radius.circular(0.0),
                                                                                     topRight: Radius.circular(5.0),
                                                                                   ),
                                                                                   border: Border.all(
-                                                                                    color: Color(0xFFB8BFD4),
+                                                                                    color: const Color(0xFFB8BFD4),
                                                                                   ),
                                                                                 ),
                                                                                 child: Align(
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Text(
                                                                                     getJsonField(
                                                                                       widget.odd,
@@ -2122,9 +2118,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       r'''$[4].o2.isMax''',
                                                                                                     ) ==
                                                                                                     true
-                                                                                                ? Color(0xFFD8DDEA)
-                                                                                                : Color(0xFF1D242F),
-                                                                                            Color(0xFF1D242F),
+                                                                                                ? const Color(0xFFD8DDEA)
+                                                                                                : const Color(0xFF1D242F),
+                                                                                            const Color(0xFF1D242F),
                                                                                           ),
                                                                                           letterSpacing: 0.0,
                                                                                           useGoogleFonts: false,
@@ -2132,7 +2128,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   ),
                                                                                 ),
                                                                               ),
-                                                                            ].divide(SizedBox(width: 10.0)),
+                                                                            ].divide(const SizedBox(width: 10.0)),
                                                                           ),
                                                                         ),
                                                                     ],
@@ -2160,7 +2156,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   10.0,
@@ -2180,7 +2176,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 'cnelskst' /* Statistica meciului  */,
                                                               ),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             ),
                                                             TextSpan(
                                                               text:
@@ -2190,7 +2186,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 r'''$.home_team.name''',
                                                               ).toString(),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             ),
                                                             TextSpan(
                                                               text: FFLocalizations
@@ -2199,7 +2195,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 '79x6cjep' /*  vs  */,
                                                               ),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             ),
                                                             TextSpan(
                                                               text:
@@ -2209,7 +2205,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 r'''$.away_team.name''',
                                                               ).toString(),
                                                               style:
-                                                                  TextStyle(),
+                                                                  const TextStyle(),
                                                             )
                                                           ],
                                                           style: FlutterFlowTheme
@@ -2239,10 +2235,10 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                           1.0,
                                                       decoration: BoxDecoration(
                                                         color:
-                                                            Color(0xFF3B3B3B),
+                                                            const Color(0xFF3B3B3B),
                                                         border: Border.all(
                                                           color:
-                                                              Color(0x80444444),
+                                                              const Color(0x80444444),
                                                         ),
                                                       ),
                                                       child: Column(
@@ -2261,17 +2257,17 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 child:
                                                                     Container(
                                                                   decoration:
-                                                                      BoxDecoration(
+                                                                      const BoxDecoration(
                                                                     color: Colors
                                                                         .white,
                                                                   ),
                                                                   alignment:
-                                                                      AlignmentDirectional(
+                                                                      const AlignmentDirectional(
                                                                           0.0,
                                                                           0.0),
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             10.0,
                                                                             5.0,
@@ -2292,7 +2288,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                               r'''$.home_team.score''',
                                                                             ).toString(),
                                                                             style:
-                                                                                TextStyle(),
+                                                                                const TextStyle(),
                                                                           ),
                                                                           TextSpan(
                                                                             text:
@@ -2300,7 +2296,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                               'dzm4uva1' /*   :   */,
                                                                             ),
                                                                             style:
-                                                                                TextStyle(),
+                                                                                const TextStyle(),
                                                                           ),
                                                                           TextSpan(
                                                                             text:
@@ -2309,14 +2305,14 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                               r'''$.away_team.score''',
                                                                             ).toString(),
                                                                             style:
-                                                                                TextStyle(),
+                                                                                const TextStyle(),
                                                                           )
                                                                         ],
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .override(
                                                                               fontFamily: 'Gelion',
-                                                                              color: Color(0xFF1D242F),
+                                                                              color: const Color(0xFF1D242F),
                                                                               fontSize: 24.0,
                                                                               letterSpacing: 0.0,
                                                                               fontWeight: FontWeight.bold,
@@ -2348,11 +2344,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           .width *
                                                                       0.5,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             10.0),
                                                                     child:
                                                                         Column(
@@ -2413,7 +2409,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   mainAxisAlignment: MainAxisAlignment.center,
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                   children: [
-                                                                                    Icon(
+                                                                                    const Icon(
                                                                                       Icons.sports_soccer,
                                                                                       color: Colors.white,
                                                                                       size: 20.0,
@@ -2428,26 +2424,26 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                 scorerItem,
                                                                                                 r'''$.name''',
                                                                                               ).toString(),
-                                                                                              style: TextStyle(),
+                                                                                              style: const TextStyle(),
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'byiqxahx' /*  ( */,
                                                                                               ),
-                                                                                              style: TextStyle(),
+                                                                                              style: const TextStyle(),
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: getJsonField(
                                                                                                 scorerItem,
                                                                                                 r'''$.time''',
                                                                                               ).toString(),
-                                                                                              style: TextStyle(),
+                                                                                              style: const TextStyle(),
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'tr457p70' /* ") */,
                                                                                               ),
-                                                                                              style: TextStyle(),
+                                                                                              style: const TextStyle(),
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2459,13 +2455,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                         textAlign: TextAlign.center,
                                                                                       ),
                                                                                     ),
-                                                                                  ].divide(SizedBox(width: 5.0)),
+                                                                                  ].divide(const SizedBox(width: 5.0)),
                                                                                 );
                                                                               }),
                                                                             );
                                                                           },
                                                                         ),
-                                                                      ].divide(SizedBox(
+                                                                      ].divide(const SizedBox(
                                                                               height: 5.0)),
                                                                     ),
                                                                   ),
@@ -2479,11 +2475,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           .width *
                                                                       0.5,
                                                                   decoration:
-                                                                      BoxDecoration(),
+                                                                      const BoxDecoration(),
                                                                   child:
                                                                       Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             10.0),
                                                                     child:
                                                                         Column(
@@ -2544,7 +2540,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   mainAxisAlignment: MainAxisAlignment.center,
                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                                                   children: [
-                                                                                    Icon(
+                                                                                    const Icon(
                                                                                       Icons.sports_soccer,
                                                                                       color: Colors.white,
                                                                                       size: 20.0,
@@ -2559,26 +2555,26 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                 scorerItem,
                                                                                                 r'''$.name''',
                                                                                               ).toString(),
-                                                                                              style: TextStyle(),
+                                                                                              style: const TextStyle(),
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'svw81htp' /*  ( */,
                                                                                               ),
-                                                                                              style: TextStyle(),
+                                                                                              style: const TextStyle(),
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: getJsonField(
                                                                                                 scorerItem,
                                                                                                 r'''$.time''',
                                                                                               ).toString(),
-                                                                                              style: TextStyle(),
+                                                                                              style: const TextStyle(),
                                                                                             ),
                                                                                             TextSpan(
                                                                                               text: FFLocalizations.of(context).getText(
                                                                                                 'vgukhsr2' /* ") */,
                                                                                               ),
-                                                                                              style: TextStyle(),
+                                                                                              style: const TextStyle(),
                                                                                             )
                                                                                           ],
                                                                                           style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2590,13 +2586,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                         textAlign: TextAlign.center,
                                                                                       ),
                                                                                     ),
-                                                                                  ].divide(SizedBox(width: 5.0)),
+                                                                                  ].divide(const SizedBox(width: 5.0)),
                                                                                 );
                                                                               }),
                                                                             );
                                                                           },
                                                                         ),
-                                                                      ].divide(SizedBox(
+                                                                      ].divide(const SizedBox(
                                                                               height: 5.0)),
                                                                     ),
                                                                   ),
@@ -2680,7 +2676,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 10.0,
                                                                 0.0, 10.0),
                                                     child: RichText(
@@ -2695,7 +2691,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 .getText(
                                                               'mcm59o4x' /* Cele mai bune cote pentru  */,
                                                             ),
-                                                            style: TextStyle(),
+                                                            style: const TextStyle(),
                                                           ),
                                                           TextSpan(
                                                             text: getJsonField(
@@ -2703,7 +2699,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                   .matchData,
                                                               r'''$.home_team.name''',
                                                             ).toString(),
-                                                            style: TextStyle(),
+                                                            style: const TextStyle(),
                                                           ),
                                                           TextSpan(
                                                             text: FFLocalizations
@@ -2711,7 +2707,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 .getText(
                                                               '70w2txnf' /*  vs  */,
                                                             ),
-                                                            style: TextStyle(),
+                                                            style: const TextStyle(),
                                                           ),
                                                           TextSpan(
                                                             text: getJsonField(
@@ -2719,7 +2715,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                   .matchData,
                                                               r'''$.away_team.name''',
                                                             ).toString(),
-                                                            style: TextStyle(),
+                                                            style: const TextStyle(),
                                                           )
                                                         ],
                                                         style: FlutterFlowTheme
@@ -2748,7 +2744,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                             .width *
                                                         1.0,
                                                     height: 40.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xFF515151),
                                                     ),
                                                     child: Row(
@@ -2767,9 +2763,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 0.4,
                                                             height: 40.0,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               FFLocalizations.of(
@@ -2801,9 +2797,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 0.3,
                                                             height: 40.0,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               FFLocalizations.of(
@@ -2835,9 +2831,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 0.3,
                                                             height: 40.0,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Text(
                                                               FFLocalizations.of(
@@ -2868,7 +2864,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 context)
                                                             .width *
                                                         1.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xFFEBEBEB),
                                                     ),
                                                     child: Row(
@@ -2886,13 +2882,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.4,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -2912,7 +2908,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                         r'''$.home_team.name''',
                                                                       ).toString(),
                                                                       style:
-                                                                          TextStyle(),
+                                                                          const TextStyle(),
                                                                     ),
                                                                     TextSpan(
                                                                       text: FFLocalizations.of(
@@ -2921,7 +2917,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                         'irmaq0eb' /*  să câștige */,
                                                                       ),
                                                                       style:
-                                                                          TextStyle(),
+                                                                          const TextStyle(),
                                                                     )
                                                                   ],
                                                                   style: FlutterFlowTheme.of(
@@ -2953,13 +2949,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.3,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -2999,13 +2995,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.3,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -3045,7 +3041,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 context)
                                                             .width *
                                                         1.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xFFC5C5C5),
                                                     ),
                                                     child: Row(
@@ -3063,13 +3059,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.4,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -3088,7 +3084,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                         'ncl0f09s' /* Egalitate */,
                                                                       ),
                                                                       style:
-                                                                          TextStyle(),
+                                                                          const TextStyle(),
                                                                     )
                                                                   ],
                                                                   style: FlutterFlowTheme.of(
@@ -3120,13 +3116,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.3,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -3166,13 +3162,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.3,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -3212,7 +3208,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                 context)
                                                             .width *
                                                         1.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xFFEBEBEB),
                                                     ),
                                                     child: Row(
@@ -3230,13 +3226,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.4,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -3256,7 +3252,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                         r'''$.away_team.name''',
                                                                       ).toString(),
                                                                       style:
-                                                                          TextStyle(),
+                                                                          const TextStyle(),
                                                                     ),
                                                                     TextSpan(
                                                                       text: FFLocalizations.of(
@@ -3265,7 +3261,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                         'au4wlp6x' /*  să câștige */,
                                                                       ),
                                                                       style:
-                                                                          TextStyle(),
+                                                                          const TextStyle(),
                                                                     )
                                                                   ],
                                                                   style: FlutterFlowTheme.of(
@@ -3297,13 +3293,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.3,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -3343,13 +3339,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     .width *
                                                                 0.3,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           10.0,
@@ -3390,7 +3386,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                             .width *
                                                         1.0,
                                                     height: 2.0,
-                                                    decoration: BoxDecoration(
+                                                    decoration: const BoxDecoration(
                                                       color: Color(0xFFC5C5C5),
                                                     ),
                                                   ),
@@ -3407,7 +3403,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                       ) ==
                                                       1)
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 10.0, 0.0, 10.0),
                                                   child: Column(
@@ -3419,7 +3415,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -3459,7 +3455,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3511,7 +3507,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.home_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3519,7 +3515,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'k8u4q4vc' /*   */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3528,7 +3524,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.home_team.score''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3536,7 +3532,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'h188ylw7' /*  :  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3545,7 +3541,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.away_team.score''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3553,7 +3549,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'c6vkohqc' /*   */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3562,7 +3558,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.away_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -3583,13 +3579,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3640,7 +3636,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'y6vc4o97' /* Eveniment:  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3649,7 +3645,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.league_name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -3670,13 +3666,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3727,7 +3723,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             '1o1eajyp' /* Data:  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3736,7 +3732,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.date_time''',
                                                                           )),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -3757,13 +3753,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3814,7 +3810,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'bobu44lq' /* Ora de începere:  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3823,7 +3819,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.date_time''',
                                                                           )),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -3844,18 +3840,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
-                                                        ].divide(SizedBox(
+                                                        ].divide(const SizedBox(
                                                             height: 5.0)),
                                                       ),
                                                     ],
                                                   ),
                                                 ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 10.0, 0.0, 10.0),
                                                 child: Column(
@@ -3866,7 +3862,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -3906,8 +3902,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                       children: [
                                                         if ((String var1,
                                                                 String var2) {
-                                                          return var1 != null &&
-                                                              var2 != null;
+                                                          return var2 != null;
                                                         }(
                                                             getJsonField(
                                                               FFAppState()
@@ -3921,7 +3916,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                             ).toString()))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -3972,7 +3967,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'ataxyifl' /* În ultimul meci,  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -3981,7 +3976,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.home_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: FFLocalizations.of(context).languageCode == 'ro'
@@ -4020,7 +4015,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   }
                                                                                 }(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4028,7 +4023,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'j22efoqt' /* împotriva  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4037,7 +4032,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.fact.home_last_matches.last_match_opponent''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4045,7 +4040,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             '2o8n67ca' /* , iar  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4054,7 +4049,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.away_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: FFLocalizations.of(context).languageCode == 'ro'
@@ -4093,7 +4088,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   }
                                                                                 }(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4101,7 +4096,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'dknaydpm' /* împotriva  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4110,7 +4105,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.fact.away_last_matches.last_match_opponent''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4118,7 +4113,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             't4eubz87' /* . */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -4139,7 +4134,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
@@ -4159,7 +4154,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                             )))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -4227,7 +4222,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                 r'''$.away_team.name''',
                                                                               ).toString()),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4235,7 +4230,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'g628mz22' /*  are o performanță mai bună în... */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: (int var1, int var2, String var3, String var4) {
@@ -4260,7 +4255,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                 r'''$.away_team.name''',
                                                                               ).toString()),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -4281,13 +4276,12 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
                                                         if ((int var1) {
-                                                          return var1 != null &&
-                                                              var1 > 1;
+                                                          return var1 > 1;
                                                         }(getJsonField(
                                                           FFAppState()
                                                               .matchData,
@@ -4295,7 +4289,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                         )))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -4346,7 +4340,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'eukejz9x' /* În ultimele 5 meciuri  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4355,7 +4349,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.home_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4363,7 +4357,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'c84g1u3u' /*  a câștigat  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4372,7 +4366,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.fact.home_win''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4380,7 +4374,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'mimizh7j' /* , iar  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4389,7 +4383,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.away_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4397,7 +4391,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'wcxf3kj0' /*  a câștigat  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4406,7 +4400,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.fact.away_win''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4414,7 +4408,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'nwgtu5db' /* . */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -4435,7 +4429,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
@@ -4452,7 +4446,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                         ).toString()))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -4503,7 +4497,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'ltefym6c' /* Numărul mediu de goluri în mec... */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4512,7 +4506,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.home_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4520,7 +4514,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'en33qpx9' /*  și  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4529,7 +4523,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.away_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4537,7 +4531,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             '4guw7nss' /*  este de  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: double.parse(getJsonField(
@@ -4546,7 +4540,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           ).toString())
                                                                               .toStringAsFixed(2),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4554,7 +4548,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             '03ok8ofn' /* . */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -4575,7 +4569,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
@@ -4597,7 +4591,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                             ).toString()))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -4648,7 +4642,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'wxwyo31c' /* În medie,  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4657,7 +4651,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.home_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4665,7 +4659,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             '7jg19flz' /*  marchează  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: double.parse(getJsonField(
@@ -4674,7 +4668,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           ).toString())
                                                                               .toStringAsFixed(2),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4682,7 +4676,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'ke6u2dig' /*  goluri când joacă acasă, iar  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4691,7 +4685,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.away_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4699,7 +4693,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             '4763ws44' /*  marchează  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: double.parse(getJsonField(
@@ -4708,7 +4702,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           ).toString())
                                                                               .toStringAsFixed(2),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4716,7 +4710,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'kza5fxga' /*  goluri când joacă în deplasar... */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -4737,7 +4731,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
@@ -4759,7 +4753,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                             ).toString()))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -4810,7 +4804,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'xf7wocjp' /* În medie,  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4819,7 +4813,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.home_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4827,7 +4821,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'lnuzfn7f' /*  marchează  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: double.parse(getJsonField(
@@ -4836,7 +4830,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           ).toString())
                                                                               .toStringAsFixed(2),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4844,7 +4838,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'ti54reto' /*  goluri într-un meci contra  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4853,7 +4847,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.away_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4861,7 +4855,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'ep2kagpj' /* , iar  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4870,7 +4864,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.away_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4878,7 +4872,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'uqf5gwwz' /*  marchează  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: double.parse(getJsonField(
@@ -4887,7 +4881,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                           ).toString())
                                                                               .toStringAsFixed(2),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4895,7 +4889,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             '0zrhg77u' /*  goluri contra  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4904,7 +4898,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             r'''$.home_team.name''',
                                                                           ).toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -4912,7 +4906,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'rqvhwzys' /* . */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -4933,7 +4927,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
@@ -4953,7 +4947,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                             )))
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         10.0,
                                                                         0.0,
@@ -5004,7 +4998,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             't5dyuxmr' /* În ultimul meci direct dintre ... */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: (String var1, String var2, String var3) {
@@ -5025,7 +5019,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                 r'''$.away_team.name''',
                                                                               ).toString()),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -5033,7 +5027,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'ypfag02i' /*  a câștigat la o diferență de  */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text: ((getJsonField(
@@ -5047,7 +5041,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                   .abs())
                                                                               .toString(),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         ),
                                                                         TextSpan(
                                                                           text:
@@ -5055,7 +5049,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             'npj6qstk' /*  goluri. */,
                                                                           ),
                                                                           style:
-                                                                              TextStyle(),
+                                                                              const TextStyle(),
                                                                         )
                                                                       ],
                                                                       style: FlutterFlowTheme.of(
@@ -5076,18 +5070,18 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                     ),
                                                                   ),
                                                                 ),
-                                                              ].divide(SizedBox(
+                                                              ].divide(const SizedBox(
                                                                   width: 5.0)),
                                                             ),
                                                           ),
-                                                      ].divide(SizedBox(
+                                                      ].divide(const SizedBox(
                                                           height: 5.0)),
                                                     ),
                                                   ],
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 10.0),
                                                 child: Text(
@@ -5110,7 +5104,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 20.0),
                                                 child: Column(
@@ -5123,7 +5117,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                               .width *
                                                           1.0,
                                                       decoration:
-                                                          BoxDecoration(),
+                                                          const BoxDecoration(),
                                                       child: Row(
                                                         mainAxisSize:
                                                             MainAxisSize.max,
@@ -5134,7 +5128,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                           Flexible(
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -5146,7 +5140,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                         .width *
                                                                     0.5,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   color: Colors
                                                                       .black,
                                                                   borderRadius:
@@ -5167,11 +5161,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                   ),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           5.0,
@@ -5229,7 +5223,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                           Flexible(
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           5.0,
                                                                           0.0,
@@ -5241,7 +5235,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                         .width *
                                                                     0.5,
                                                                 decoration:
-                                                                    BoxDecoration(
+                                                                    const BoxDecoration(
                                                                   color: Colors
                                                                       .black,
                                                                   borderRadius:
@@ -5262,11 +5256,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                   ),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           10.0,
                                                                           5.0,
@@ -5370,7 +5364,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             .max,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             5.0,
                                                                             5.0,
                                                                             5.0,
@@ -5387,13 +5381,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                 BorderRadius.circular(5.0),
                                                                             border:
                                                                                 Border.all(
-                                                                              color: Color(0xFF787878),
+                                                                              color: const Color(0xFF787878),
                                                                               width: 2.0,
                                                                             ),
                                                                           ),
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 5.0,
                                                                                 15.0,
                                                                                 5.0,
@@ -5423,9 +5417,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                     ),
                                                                                     Container(
                                                                                       width: MediaQuery.sizeOf(context).width / 2 - 100,
-                                                                                      decoration: BoxDecoration(),
+                                                                                      decoration: const BoxDecoration(),
                                                                                       child: Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           getJsonField(
                                                                                             homeTeamPlayerItem,
@@ -5463,7 +5457,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               return Column(
                                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                                 children: [
-                                                                                                  Icon(
+                                                                                                  const Icon(
                                                                                                     Icons.repeat,
                                                                                                     color: Color(0xFF0378ED),
                                                                                                     size: 24.0,
@@ -5495,9 +5489,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       Flexible(
                                                                                                         child: Container(
                                                                                                           width: MediaQuery.sizeOf(context).width / 2 - 100,
-                                                                                                          decoration: BoxDecoration(),
+                                                                                                          decoration: const BoxDecoration(),
                                                                                                           child: Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                                                                                                             child: Text(
                                                                                                               getJsonField(
                                                                                                                 subplayerItem,
@@ -5505,7 +5499,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                               ).toString(),
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Gelion',
-                                                                                                                    color: Color(0xFF0378ED),
+                                                                                                                    color: const Color(0xFF0378ED),
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: false,
                                                                                                                   ),
@@ -5573,7 +5567,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                             .max,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             5.0,
                                                                             5.0,
                                                                             5.0,
@@ -5590,13 +5584,13 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                 BorderRadius.circular(5.0),
                                                                             border:
                                                                                 Border.all(
-                                                                              color: Color(0xFF787878),
+                                                                              color: const Color(0xFF787878),
                                                                               width: 2.0,
                                                                             ),
                                                                           ),
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 5.0,
                                                                                 15.0,
                                                                                 5.0,
@@ -5625,9 +5619,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                     ),
                                                                                     Container(
                                                                                       width: MediaQuery.sizeOf(context).width / 2 - 100,
-                                                                                      decoration: BoxDecoration(),
+                                                                                      decoration: const BoxDecoration(),
                                                                                       child: Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           getJsonField(
                                                                                             awayTeamPlayerItem,
@@ -5665,7 +5659,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                               return Column(
                                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                                 children: [
-                                                                                                  Icon(
+                                                                                                  const Icon(
                                                                                                     Icons.repeat,
                                                                                                     color: Color(0xFF0378ED),
                                                                                                     size: 24.0,
@@ -5697,9 +5691,9 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                       Flexible(
                                                                                                         child: Container(
                                                                                                           width: MediaQuery.sizeOf(context).width / 2 - 100,
-                                                                                                          decoration: BoxDecoration(),
+                                                                                                          decoration: const BoxDecoration(),
                                                                                                           child: Padding(
-                                                                                                            padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
                                                                                                             child: Text(
                                                                                                               getJsonField(
                                                                                                                 subplayerItem,
@@ -5707,7 +5701,7 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                                                                               ).toString(),
                                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                                     fontFamily: 'Gelion',
-                                                                                                                    color: Color(0xFF0378ED),
+                                                                                                                    color: const Color(0xFF0378ED),
                                                                                                                     letterSpacing: 0.0,
                                                                                                                     useGoogleFonts: false,
                                                                                                                   ),
@@ -5748,30 +5742,30 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                                                 model: _model.footerModel,
                                                 updateCallback: () =>
                                                     setState(() {}),
-                                                child: FooterWidget(),
+                                                child: const FooterWidget(),
                                               ),
-                                            ].divide(SizedBox(height: 0.0)),
+                                            ].divide(const SizedBox(height: 0.0)),
                                           ),
                                         ),
                                       ),
                                     if (_model.loading && _model.netStatus)
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: wrapWithModel(
                                           model: _model.loadingModel,
                                           updateCallback: () => setState(() {}),
-                                          child: LoadingWidget(),
+                                          child: const LoadingWidget(),
                                         ),
                                       ),
                                     if (!_model.netStatus)
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: wrapWithModel(
                                           model: _model.neterrorModel,
                                           updateCallback: () => setState(() {}),
-                                          child: NeterrorWidget(),
+                                          child: const NeterrorWidget(),
                                         ),
                                       ),
                                   ],
@@ -5784,11 +5778,11 @@ class _MatchPageWidgetState extends State<MatchPageWidget>
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 1.0),
+                      alignment: const AlignmentDirectional(0.0, 1.0),
                       child: wrapWithModel(
                         model: _model.navbarModel,
                         updateCallback: () => setState(() {}),
-                        child: NavbarWidget(
+                        child: const NavbarWidget(
                           selected: 0,
                         ),
                       ),

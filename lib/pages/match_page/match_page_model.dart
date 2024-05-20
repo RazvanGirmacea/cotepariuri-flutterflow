@@ -4,22 +4,9 @@ import '/components/loading_widget.dart';
 import '/components/navbar_widget.dart';
 import '/components/neterror_widget.dart';
 import '/components/stats_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_video_player.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import '/flutter_flow/custom_functions.dart' as functions;
 import 'match_page_widget.dart' show MatchPageWidget;
-import 'package:styled_divider/styled_divider.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class MatchPageModel extends FlutterFlowModel<MatchPageWidget> {
   ///  Local state fields for this page.

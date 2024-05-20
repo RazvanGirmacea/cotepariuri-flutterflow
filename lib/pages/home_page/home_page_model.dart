@@ -4,21 +4,9 @@ import '/components/footer_widget.dart';
 import '/components/loading_widget.dart';
 import '/components/navbar_widget.dart';
 import '/components/neterror_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import '/flutter_flow/custom_functions.dart' as functions;
 import 'home_page_widget.dart' show HomePageWidget;
-import 'package:styled_divider/styled_divider.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   ///  Local state fields for this page.
@@ -83,7 +71,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
     apiAgainCCopy = await HomepageAziMeciuriLiveCall.call(
       language: FFLocalizations.of(context).languageCode,
     );
-    if ((apiAgainCCopy?.succeeded ?? true)) {
+    if ((apiAgainCCopy.succeeded ?? true)) {
       FFAppState().update(() {
         FFAppState().data = (apiAgainCCopy?.jsonBody ?? '');
       });

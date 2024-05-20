@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 
 import '/flutter_flow/flutter_flow_util.dart';
@@ -16,7 +15,7 @@ class HomepageAziMeciuriLiveCall {
     return ApiManager.instance.makeApiCall(
       callName: 'Homepage azi  meciuri live',
       apiUrl:
-          'https://sports.esportsbettingtop.com/api/match/index?language=${language}&groupby=series&date=today,tomorrow&status=live,upcoming&has-odd=1&json=1&no-cache=1&token=qg3uvsr356ss67xnwns&nonce=78e1e7ed9d',
+          'https://sports.esportsbettingtop.com/api/match/index?language=$language&groupby=series&date=today,tomorrow&status=live,upcoming&has-odd=1&json=1&no-cache=1&token=qg3uvsr356ss67xnwns&nonce=78e1e7ed9d',
       callType: ApiCallType.GET,
       headers: {},
       params: {},
@@ -126,7 +125,7 @@ class MatchAPICall {
     return ApiManager.instance.makeApiCall(
       callName: 'Match API',
       apiUrl:
-          'https://sports.esportsbettingtop.com/api/wp-page/match?sport=football&series=${series}&match_id=${matchId}&language=${language}&token=qg3uvsr356ss67xnwns',
+          'https://sports.esportsbettingtop.com/api/wp-page/match?sport=football&series=$series&match_id=$matchId&language=$language&token=qg3uvsr356ss67xnwns',
       callType: ApiCallType.GET,
       headers: {},
       params: {},
@@ -147,7 +146,7 @@ class LeagueAPICall {
     return ApiManager.instance.makeApiCall(
       callName: 'League API',
       apiUrl:
-          'https://sports.esportsbettingtop.com/api/match/index?serie-slug=${league}&language=${language}&limit=8&status=live,upcoming&json=1&has-odd=1&token=qg3uvsr356ss67xnwns&nonce=78e1e7ed9d',
+          'https://sports.esportsbettingtop.com/api/match/index?serie-slug=$league&language=$language&limit=8&status=live,upcoming&json=1&has-odd=1&token=qg3uvsr356ss67xnwns&nonce=78e1e7ed9d',
       callType: ApiCallType.GET,
       headers: {},
       params: {},

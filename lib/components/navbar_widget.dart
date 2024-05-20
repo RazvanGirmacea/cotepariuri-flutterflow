@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'navbar_model.dart';
 export 'navbar_model.dart';
 
@@ -11,7 +9,7 @@ class NavbarWidget extends StatefulWidget {
   const NavbarWidget({
     super.key,
     int? selected,
-  }) : this.selected = selected ?? 0;
+  }) : selected = selected ?? 0;
 
   final int selected;
 
@@ -50,7 +48,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
       height: 60.0,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).primaryBackground,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(0.0),
           bottomRight: Radius.circular(0.0),
           topLeft: Radius.circular(15.0),
@@ -58,7 +56,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
         ),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -79,8 +77,8 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     Container(
                       width: 40.0,
                       height: 40.0,
-                      decoration: BoxDecoration(),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      decoration: const BoxDecoration(),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Builder(
                         builder: (context) {
                           if (widget.selected == 1) {
@@ -153,8 +151,8 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     Container(
                       width: 40.0,
                       height: 40.0,
-                      decoration: BoxDecoration(),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      decoration: const BoxDecoration(),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Builder(
                         builder: (context) {
                           if (widget.selected == 2) {
@@ -227,8 +225,8 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                     Container(
                       width: 40.0,
                       height: 40.0,
-                      decoration: BoxDecoration(),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      decoration: const BoxDecoration(),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Builder(
                         builder: (context) {
                           if (widget.selected == 3) {

@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'footer_model.dart';
 export 'footer_model.dart';
 
@@ -40,7 +38,7 @@ class _FooterWidgetState extends State<FooterWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -86,7 +84,7 @@ class _FooterWidgetState extends State<FooterWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-            ].divide(SizedBox(width: 5.0)),
+            ].divide(const SizedBox(width: 5.0)),
           ),
           Row(
             mainAxisSize: MainAxisSize.max,
@@ -112,9 +110,9 @@ class _FooterWidgetState extends State<FooterWidget> {
                       useGoogleFonts: false,
                     ),
               ),
-            ].divide(SizedBox(width: 5.0)),
+            ].divide(const SizedBox(width: 5.0)),
           ),
-        ].addToStart(SizedBox(height: 5.0)).addToEnd(SizedBox(height: 5.0)),
+        ].addToStart(const SizedBox(height: 5.0)).addToEnd(const SizedBox(height: 5.0)),
       ),
     );
   }

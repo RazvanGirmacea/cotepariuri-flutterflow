@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'choice_button_model.dart';
 export 'choice_button_model.dart';
 
@@ -49,7 +47,7 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Stack(
         children: [
           if (!widget.choice!)
@@ -61,7 +59,7 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
               ),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Color(0xFFD8DDEA),
+                  color: const Color(0xFFD8DDEA),
                   borderRadius: BorderRadius.circular(40.0),
                 ),
                 child: Row(
@@ -70,11 +68,11 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
                   children: [
                     Container(
                       decoration: BoxDecoration(
-                        color: Color(0xFFD8DDEA),
+                        color: const Color(0xFFD8DDEA),
                         borderRadius: BorderRadius.circular(40.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 5.0, 10.0, 5.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -93,7 +91,7 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
                                     useGoogleFonts: false,
                                   ),
                             ),
-                          ].divide(SizedBox(width: 5.0)),
+                          ].divide(const SizedBox(width: 5.0)),
                         ),
                       ),
                     ),
@@ -105,11 +103,11 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
                       ),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFF1D242F),
+                          color: const Color(0xFF1D242F),
                           borderRadius: BorderRadius.circular(40.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 5.0, 10.0, 5.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -121,14 +119,14 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Gelion',
-                                      color: Color(0xFFE0E3E7),
+                                      color: const Color(0xFFE0E3E7),
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 5.0)),
+                            ].divide(const SizedBox(width: 5.0)),
                           ),
                         ),
                       ),
@@ -146,7 +144,7 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
               ),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Color(0xFFD8DDEA),
+                  color: const Color(0xFFD8DDEA),
                   borderRadius: BorderRadius.circular(40.0),
                 ),
                 child: Row(
@@ -161,11 +159,11 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
                       ),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color(0xFF1D242F),
+                          color: const Color(0xFF1D242F),
                           borderRadius: BorderRadius.circular(40.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(5.0),
+                          padding: const EdgeInsets.all(5.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -176,14 +174,14 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Gelion',
-                                      color: Color(0xFFE0E3E7),
+                                      color: const Color(0xFFE0E3E7),
                                       fontSize: 16.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
                                       useGoogleFonts: false,
                                     ),
                               ),
-                            ].divide(SizedBox(width: 5.0)),
+                            ].divide(const SizedBox(width: 5.0)),
                           ),
                         ),
                       ),
@@ -193,7 +191,7 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
                         borderRadius: BorderRadius.circular(40.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(5.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -211,7 +209,7 @@ class _ChoiceButtonWidgetState extends State<ChoiceButtonWidget> {
                                     useGoogleFonts: false,
                                   ),
                             ),
-                          ].divide(SizedBox(width: 5.0)),
+                          ].divide(const SizedBox(width: 5.0)),
                         ),
                       ),
                     ),
